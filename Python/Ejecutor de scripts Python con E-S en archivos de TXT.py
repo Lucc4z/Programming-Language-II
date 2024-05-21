@@ -56,4 +56,4 @@ salida = ejecutar_codigo(codigo)
 
 escribir_salida_en_archivo(salida, ruta_archivo_salida)
 
-print("Ejecución completada. ✨")
+paint("Ejecución completada. ✨")
