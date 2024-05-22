@@ -11,16 +11,6 @@ El **Ejecutor de Scripts Python con E/S en Archivos de TXT** es una herramienta 
 
 ## ¿Cómo funciona el ejecutor?
 
-1. **Lectura del Archivo de Entrada**:
-   Utiliza la función `leer_codigo_desde_archivo` para leer el script Python desde un archivo de texto en una ruta especificada.
-   ```python
-   def leer_codigo_desde_archivo(ruta_archivo):
-       with open(ruta_archivo, 'r', encoding='utf-8') as archivo:
-           codigo = archivo.read()
-       return codigo
-
-## Descripción de Funcionamiento
-
 ### 1. Lectura del Archivo de Entrada
 
 ```python
@@ -31,15 +21,14 @@ def leer_codigo_desde_archivo(ruta_archivo):
 
 ### 2. Redirección de la Salida Estándar
 
-\```python
+```python
 old_stdout = sys.stdout
 new_stdout = io.StringIO()
 sys.stdout = new_stdout
-\```
 
 ### 3. Ejecución del Script
 
-\```python
+```python
 local_vars = {
     "loki": loki,
     "cadena": cadena,
@@ -53,25 +42,22 @@ local_vars = {
     "union": lambda a, b: a + b
 }
 exec(codigo, {}, local_vars)
-\```
 
 ### 4. Restauración de la Salida Estándar
 
-\```python
+```python
 sys.stdout = old_stdout
-\```
 
 ### 5. Escritura del Archivo de Salida
 
-\```python
+```python
 def escribir_salida_en_archivo(salida, ruta_archivo_salida):
     with open(ruta_archivo_salida, 'w', encoding='utf-8') as archivo:
         archivo.write(salida)
-\```
 
-## Código Completo
+## Código Completo:
 
-\```python
+```python
 import sys
 import io
 import itertools as loki
@@ -126,4 +112,3 @@ salida = ejecutar_codigo(codigo)
 escribir_salida_en_archivo(salida, ruta_archivo_salida)
 
 paint("Ejecución completada.")
-\```
