@@ -26,6 +26,7 @@ old_stdout = sys.stdout
 new_stdout = io.StringIO()
 sys.stdout = new_stdout
 
+
 ### 3. Ejecución del Script
 
 ```python
