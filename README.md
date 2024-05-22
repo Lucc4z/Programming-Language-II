@@ -1,9 +1,5 @@
 # Ejecutor de Scripts Python con E/S en Archivos de TXT
 
-El Ejecutor de Scripts Python es una herramienta diseñada para leer, ejecutar y almacenar la salida de scripts Python desde y hacia archivos de texto.
-
-# Ejecutor de Scripts Python con E/S en Archivos de TXT
-
 El **Ejecutor de Scripts Python con E/S en Archivos de TXT** es una herramienta diseñada para leer, ejecutar y almacenar la salida de scripts Python desde archivos de texto. Esta herramienta es ideal para tareas de automatización, procesamiento en lote y generación de registros de ejecución.
 
 ## ¿Qué hace?
