@@ -28,7 +28,6 @@ def leer_codigo_desde_archivo(ruta_archivo):
     with open(ruta_archivo, 'r', encoding='utf-8') as archivo:
         codigo = archivo.read()
     return codigo
-\```
 
 ### 2. Redirección de la Salida Estándar
 
