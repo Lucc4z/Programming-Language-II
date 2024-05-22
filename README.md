@@ -23,7 +23,7 @@ El **Ejecutor de Scripts Python con E/S en Archivos de TXT** es una herramienta 
 
 ### 1. Lectura del Archivo de Entrada
 
-\```python
+```python
 def leer_codigo_desde_archivo(ruta_archivo):
     with open(ruta_archivo, 'r', encoding='utf-8') as archivo:
         codigo = archivo.read()
