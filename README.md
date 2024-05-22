@@ -114,3 +114,15 @@ salida = ejecutar_codigo(codigo)
 escribir_salida_en_archivo(salida, ruta_archivo_salida)
 
 paint("Ejecución completada.")
+```
+## Ejemplo de Uso:
+
+Supongamos que tienes un script Python en un archivo llamado Input.txt con el siguiente contenido:
+```python
+paint("Hola, soy Øwen (;")
+```
+Este script será leído, ejecutado, y su salida (Hola, soy Øwen (;) será guardada en un archivo de texto
+llamado Output.txt. Al final, Output.txt contendrá:
+```python
+Hola, soy Øwen (;
+```
