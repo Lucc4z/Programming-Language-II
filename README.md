@@ -2,6 +2,27 @@
 
 El Ejecutor de Scripts Python es una herramienta diseñada para leer, ejecutar y almacenar la salida de scripts Python desde y hacia archivos de texto.
 
+# Ejecutor de Scripts Python con E/S en Archivos de TXT
+
+El **Ejecutor de Scripts Python con E/S en Archivos de TXT** es una herramienta diseñada para leer, ejecutar y almacenar la salida de scripts Python desde archivos de texto. Esta herramienta es ideal para tareas de automatización, procesamiento en lote y generación de registros de ejecución.
+
+## ¿Qué hace?
+
+- **Lectura de Código**: Obtiene el contenido de un archivo de texto que contiene un script Python.
+- **Ejecución del Script**: Ejecuta el script Python dentro de un entorno controlado.
+- **Almacenamiento de Salida**: Redirige la salida estándar del script, almacenando todo lo que normalmente se imprimiría en la consola.
+- **Escritura de Salida**: Guarda la salida del script en un archivo de texto especificado, creando un registro persistente.
+
+## ¿Cómo funciona el ejecutor?
+
+1. **Lectura del Archivo de Entrada**:
+   Utiliza la función `leer_codigo_desde_archivo` para leer el script Python desde un archivo de texto en una ruta especificada.
+   ```python
+   def leer_codigo_desde_archivo(ruta_archivo):
+       with open(ruta_archivo, 'r', encoding='utf-8') as archivo:
+           codigo = archivo.read()
+       return codigo
+
 ## Descripción de Funcionamiento
 
 ### 1. Lectura del Archivo de Entrada
