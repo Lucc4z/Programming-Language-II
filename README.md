@@ -18,6 +18,7 @@ def leer_codigo_desde_archivo(ruta_archivo):
     with open(ruta_archivo, 'r', encoding='utf-8') as archivo:
         codigo = archivo.read()
     return codigo
+```
 
 ### 2. Redirección de la Salida Estándar
 
@@ -25,7 +26,7 @@ def leer_codigo_desde_archivo(ruta_archivo):
 old_stdout = sys.stdout
 new_stdout = io.StringIO()
 sys.stdout = new_stdout
-
+```
 
 ### 3. Ejecución del Script
 
@@ -43,19 +44,19 @@ local_vars = {
     "union": lambda a, b: a + b
 }
 exec(codigo, {}, local_vars)
-
+```
 ### 4. Restauración de la Salida Estándar
 
 ```python
 sys.stdout = old_stdout
-
+```
 ### 5. Escritura del Archivo de Salida
 
 ```python
 def escribir_salida_en_archivo(salida, ruta_archivo_salida):
     with open(ruta_archivo_salida, 'w', encoding='utf-8') as archivo:
         archivo.write(salida)
-
+```
 ## Código Completo:
 
 ```python
