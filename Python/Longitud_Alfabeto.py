@@ -8,6 +8,6 @@ def generar_lenguaje(n, p):
         print("]")
 
 n = int(input("Tamaño del alfabeto: "))
-p = int(input("Potencia del lenguaje: "))
+p = int(input("Potencia del lenguaje mas: "))
 
 generar_lenguaje(n, p)
